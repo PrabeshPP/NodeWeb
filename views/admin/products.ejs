@@ -4,12 +4,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../form.css"/>
+    <link rel="stylesheet" href="../products.css"/>
     <title>Add Products</title>
 </head>
 <body>
+    
     <div class="box">
-        
+        <%products.forEach((item)=>{%>
+            <a href="/admin/products/<%=item.id%>">
+                <div class="item-box">
+                    <img src="<%=item.imageURL%>" alt="<%=item.title%>"/>
+                    <div class="box-title">
+                        <h4><%=item.title%></h4>
+                    </div>
+                    <div class="box-price">
+                        <h5>Rs.<%=item.price%></h5>
+                    </div>
+                    <div class="discount-box">
+                        <h5 class="h5">Rs.<%=item.price*4%></h5>
+                    </div>
+                </div>
+            </a>
+        <%})%>
     </div>
 </body>
 </html>

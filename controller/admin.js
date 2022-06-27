@@ -31,9 +31,18 @@ const postProduct=async(req,res)=>{
 const getProducts=async(req,res)=>{
     const products=await Product.findAll();
     res.status(200).render("admin/products",{
-        title:products[1].title
+        products
+    });
+}
+
+//details-product
+const getDetailProduct=async(req,res)=>{
+    const product=await Product.findByPk(req.params.id);
+    res.status(200).render("admin/product-detail",{
+        product
     });
 }
 
 
-module.exports={addProduct,postProduct,getProducts};
+
+module.exports={addProduct,postProduct,getProducts,getDetailProduct};
