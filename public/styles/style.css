@@ -508,21 +508,102 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
-.h-14 {
-  height: 3.5rem;
+.flex {
+  display: flex;
+}
+.h-96 {
+  height: 24rem;
+}
+.h-10 {
+  height: 2.5rem;
+}
+.h-10v {
+  height: 10vh;
+}
+.h-100v {
+  height: 100vh;
+}
+.h-40v {
+  height: 40vh;
+}
+.h-screen {
+  height: 100vh;
+}
+.h-60v {
+  height: 60vh;
+}
+.h-70v {
+  height: 70vh;
 }
 .w-10 {
   width: 2.5rem;
+}
+.w-\[\] {
+  width: ;
+}
+.w-\[90\] {
+  width: 90;
+}
+.w-\[90vh\] {
+  width: 90vh;
+}
+.w-\[90vw\] {
+  width: 90vw;
+}
+.w-\[50vw\] {
+  width: 50vw;
+}
+.content-center {
+  align-content: center;
+}
+.items-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
 }
 .bg-red-700 {
   --tw-bg-opacity: 1;
   background-color: rgb(185 28 28 / var(--tw-bg-opacity));
 }
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
-.text-purple-900 {
-  --tw-text-opacity: 1;
-  color: rgb(88 28 135 / var(--tw-text-opacity));
+.bg-\[url\(\"\"\)\] {
+  background-image: url("");
+}
+.bg-\[url\(\'\'\)\] {
+  background-image: url('');
+}
+.bg-\[url\(\'\/\'\)\] {
+  background-image: url('/');
+}
+.bg-\[url\(\'\/assets\/\'\)\] {
+  background-image: url('/assets/');
+}
+.bg-\[url\(\'\/assets\/login\.svg\'\)\] {
+  background-image: url('/assets/login.svg');
+}
+.bg-contain {
+  background-size: contain;
+}
+.bg-auto {
+  background-size: auto;
+}
+.bg-cover {
+  background-size: cover;
+}
+.bg-center {
+  background-position: center;
+}
+.bg-repeat {
+  background-repeat: repeat;
+}
+.bg-no-repeat {
+  background-repeat: no-repeat;
+}
+.object-contain {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
