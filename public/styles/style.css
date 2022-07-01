@@ -538,9 +538,7 @@ video {
 .h-\[80\%\] {
   height: 80%;
 }
-.h-\[\] {
-  height: ;
-}
+
 .h-\[10\%\] {
   height: 10%;
 }
@@ -554,7 +552,7 @@ video {
   height: 100%;
 }
 .h-\[20\%\%\] {
-  height: 20%%;
+  height: 20%;
 }
 .h-max {
   height: -webkit-max-content;
@@ -581,9 +579,7 @@ video {
 .w-\[90\%\] {
   width: 90%;
 }
-.w-\[\] {
-  width: ;
-}
+
 .w-\[40\%\] {
   width: 40%;
 }
