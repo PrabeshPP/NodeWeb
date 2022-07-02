@@ -1,31 +1,39 @@
 <%- include("./includes/head.ejs")%>
 <link href="../../styles/style.css" rel="stylesheet"/>
 <body>
-    <div  class="h-100v w-12/12 object-contain bg-center bg-no-repeat
-    flex items-center  justify-center flex-col" style="background-image:url('../../assets/index.svg');">
+    <div  class="h-100v w-12/12  
+    flex items-center  justify-center flex-col bg-[#d2d2d2] box-border">
 
-        <div class="h-[30%] w-[60%] bg-black bg-opacity-80 backdrop-blur-md rounded-3xl flex items-center justify-center text-5xl text-white font-bold">
-            Library Management
+        <div class=" relative h-[30%] w-[45%]">
+            <div class="absolute -top-2 -left-2 bg-purple-300 w-72 h-72 rounded-full mix-blend-multiply filter blur-xl animate-blob ">
+            </div>
+            <div class="absolute -top-2 -right-1 bg-yellow-300 w-72 h-72 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-2000">
+            </div>
+            <div class="absolute -bottom-10 left-[30%] bg-pink-300 w-72 h-72 rounded-full mix-blend-multiply filter blur-xl animate-blob animation-delay-4000">
+            </div>
+            <div class="absolute h-[100%] w-[100%] bg-white flex items-center justify-center text-4xl text-black font-bold rounded-2xl">
+                Libray Managemnet System
+            </div>
         </div>
-        <div class="h-[60%] w-[90%] flex justify-center items-center">
-            <a class="h-40v w-[30%]" href="/login">
-                <div class="h-[100%] w-[100%] bg-teal-500 rounded-3xl mr-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center">
+        <div class="h-[60%] w-[90%] flex justify-center items-center mt-7">
+            <a class="h-30v w-[30%]" href="/login">
+                <div class="h-[100%] w-[100%] bg-white rounded-3xl mr-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center">
                     <div class="h-[50%] w-[100%]  rounded-t-3xl flex justify-center items-center" >
                         <img src="../../assets/users.png" alt="admin" class="h-20 w-20"/>
                     </div>
                     <div class="h-max w-[100%] rounded-b-3xl flex justify-center items-center">
-                        <h1 class="text-white font-bold text-3xl">Students</h1>
+                        <h1 class="text-black font-bold text-3xl">Students</h1>
                     </div>
                 </div>
             </a>
     
-            <a class="h-40v w-[30%]" href="/admin/login">
-                <div class="h-[100%] w-[100%] bg-teal-500 rounded-3xl ml-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center" >
+            <a class="h-30v w-[30%]" href="/admin/login">
+                <div class="h-[100%] w-[100%] bg-white rounded-3xl ml-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center" >
                     <div class="h-[50%] w-[100%]  rounded-t-3xl flex justify-center items-center" >
                         <img src="../../assets/admin.png" alt="admin" class="h-20 w-20"/>
                     </div>
                     <div class="h-max w-[100%] rounded-b-3xl flex justify-center items-center">
-                        <h1 class="text-white font-bold text-3xl">Admin</h1>
+                        <h1 class="text-black font-bold text-3xl">Admin</h1>
                     </div>
                 </div>
             </a>
