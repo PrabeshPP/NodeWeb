@@ -2,28 +2,34 @@
 <link href="../../styles/style.css" rel="stylesheet"/>
 <body>
     <div  class="h-100v w-12/12 object-contain bg-center bg-no-repeat
-    flex items-center  justify-center" style="background-image:url('../../assets/index.svg') ;">
-        <a class="h-40v w-[30%]" href="/login">
-            <div class="h-[100%] w-[100%] bg-teal-500 rounded-3xl mr-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center">
-                <div class="h-[50%] w-[100%]  rounded-t-3xl flex justify-center items-center" >
-                    <img src="../../assets/users.png" alt="admin" class="h-20 w-20"/>
-                </div>
-                <div class="h-max w-[100%] rounded-b-3xl flex justify-center items-center">
-                    <h1 class="text-white font-bold text-3xl">User</h1>
-                </div>
-            </div>
-        </a>
+    flex items-center  justify-center flex-col" style="background-image:url('../../assets/index.svg');">
 
-        <a class="h-40v w-[30%]" href="/admin/login">
-            <div class="h-[100%] w-[100%] bg-teal-500 rounded-3xl ml-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center" >
-                <div class="h-[50%] w-[100%]  rounded-t-3xl flex justify-center items-center" >
-                    <img src="../../assets/admin.png" alt="admin" class="h-20 w-20"/>
+        <div class="h-[30%] w-[60%] bg-black bg-opacity-80 backdrop-blur-md rounded-3xl flex items-center justify-center text-5xl text-white font-bold">
+            Library Management
+        </div>
+        <div class="h-[60%] w-[90%] flex justify-center items-center">
+            <a class="h-40v w-[30%]" href="/login">
+                <div class="h-[100%] w-[100%] bg-teal-500 rounded-3xl mr-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center">
+                    <div class="h-[50%] w-[100%]  rounded-t-3xl flex justify-center items-center" >
+                        <img src="../../assets/users.png" alt="admin" class="h-20 w-20"/>
+                    </div>
+                    <div class="h-max w-[100%] rounded-b-3xl flex justify-center items-center">
+                        <h1 class="text-white font-bold text-3xl">Students</h1>
+                    </div>
                 </div>
-                <div class="h-max w-[100%] rounded-b-3xl flex justify-center items-center">
-                    <h1 class="text-white font-bold text-3xl">Admin</h1>
+            </a>
+    
+            <a class="h-40v w-[30%]" href="/admin/login">
+                <div class="h-[100%] w-[100%] bg-teal-500 rounded-3xl ml-5 cursor-pointer hover:shadow-2xl hover:shadow-black flex flex-col justify-center items-center" >
+                    <div class="h-[50%] w-[100%]  rounded-t-3xl flex justify-center items-center" >
+                        <img src="../../assets/admin.png" alt="admin" class="h-20 w-20"/>
+                    </div>
+                    <div class="h-max w-[100%] rounded-b-3xl flex justify-center items-center">
+                        <h1 class="text-white font-bold text-3xl">Admin</h1>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
+        </div>
         
     </div>
 </body>

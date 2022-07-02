@@ -2,7 +2,7 @@ const getLoginPage=(req,res)=>{
     res.status(200);
     res.render("auth/login",{
         pageTitle:"User Login",
-        header:"User",
+        header:"Login",
         postPath:"/login"
     });
 }
