@@ -3,6 +3,10 @@ module.exports = {
   content: ["./views/**/*.{ejs,js}"],
   theme: {
     extend: {
+      fontFamily:{
+        'neucha':['Neucha','cursive']
+      },
+
       height:{
         "10v": "10vh",
         "20v": "20vh",
