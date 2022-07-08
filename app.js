@@ -1,6 +1,8 @@
 const express=require("express");
 const path=require("path");
 const app=express();
+const session=require("express-session");
+const pg=require("pg");
 
 
 const sequelize=require("./utils/pgDatabase");
@@ -20,6 +22,11 @@ app.use(express.urlencoded({extended:false}));
 app.use(express.json());
 
 app.use(express.static(path.join(__dirname,"public")));
+
+app.use(session({
+    
+}));
+
 
 app.use(libraryRouter);
 app.use("/users",authRouter);

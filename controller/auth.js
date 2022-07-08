@@ -6,7 +6,7 @@ const getLoginPage=(req,res)=>{
     res.render("auth/login",{
         pageTitle:"User Login",
         header:"Login",
-        postPath:"/admin/login",
+        postPath:"/users/login",
         signUpLink:"/users/signup"
     });
 }
