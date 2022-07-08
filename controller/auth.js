@@ -6,7 +6,8 @@ const getLoginPage=(req,res)=>{
     res.render("auth/login",{
         pageTitle:"User Login",
         header:"Login",
-        postPath:"/login"
+        postPath:"/admin/login",
+        signUpLink:"/users/signup"
     });
 }
 
@@ -15,6 +16,7 @@ const getSignUp=(req,res)=>{
     res.status(200);
     res.render("auth/signup",{
         pageTitle:"Sign Up",
+        postSignUp:"/users/signup"
     })
 }
 
@@ -29,7 +31,7 @@ const postSignUp=async(req,res)=>{
     });
 
     if(foundUser){
-        return res.redirect("/signup");
+        return res.redirect("/users/signup");
     }
 
     if(email.length===0 || password.length===0){
@@ -37,13 +39,13 @@ const postSignUp=async(req,res)=>{
     }
 
     const hashedPassword=   await bcrypt.hash(password,12);
-    const user= User.create({
+    const user=await User.create({
         email:email,
         password:hashedPassword
     });
 
 
-    res.redirect("/login");
+    res.redirect("/users/login");
   
 }
 

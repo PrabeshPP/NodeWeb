@@ -22,10 +22,10 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname,"public")));
 
 app.use(libraryRouter);
-app.use(authRouter);
+app.use("/users",authRouter);
 app.use('/admin',adminRouter);
 
-sequelize.sync({force:true}).then((result)=>{
+sequelize.sync().then((result)=>{
     app.listen(PORT,()=>{
         console.log(`Server is running at PORT ${PORT}`)
     })
