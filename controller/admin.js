@@ -71,6 +71,7 @@ const postLoginPage=async(req,res)=>{
     const passwordMatched=await bcrypt.compare(password,foundUser.password)
 
     if(passwordMatched){
+        req.session.isLoggedIn=true;
         return res.redirect("/admin/dashboard");
     }else{
         return res.redirect("/admin/login")
